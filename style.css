@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(110, 180, 180);
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center; /* İçeriği yatayda merkezle */
+    align-items: center; /* İçeriği dikeyde merkezle */
+
+}
+
+.main{
+    background-color:rgb(77, 71, 72);
+    width:350px;
+    height:440px;
+    margin: 60px auto 0; 
+    border-radius:10px;
+}
+
+input{
+    background-color:rgb(77, 71, 72);
+    color:white;
+    font-size:30px;
+    width: calc(100% - 20px);
+    /* width:100% yaptığım zaman main'le aynı boyutta olmuyor, taşıyordu
+    calc matematiksel işlemler için kullanılır.
+    -20px --> bu genişlikten 20 piksel çıkartılacağını belirtir. */
+    height:40px;
+    margin-top:20px;
+    margin-bottom:10px;
+    outline:none;
+    border:0px;
+    border-radius:10px;
+    text-align:right;
+
+}
+
+.firstColumn,.secondColumn,.thirdColumn,.fourthColumn{
+    display:flex;
+    justify-content:center;
+    align-items:center;  
+}
+
+.btn, .btnACDE{
+    background-color:rgb(77, 71, 72);
+    color:white;
+    width:60px;
+    height:50px;    
+    font-size:20px;
+    font-weight:bold;    
+    margin:10px; 
+    border-radius:7px;
+    border:1px solid rgb(77, 71, 72);
+    box-shadow: 1px 2px 7px rgba(255, 255, 255, 0.3); /* Beyaz parıldama efekti */
+    cursor:pointer;
+}
+
+.btnEqual{
+    background-color:rgb(77, 71, 72);
+    color:rgb(24, 252, 229);
+    width:140px;
+    height:50px;    
+    font-size:20px;
+    font-weight:bold;    
+    margin:10px; 
+    border-radius:7px;
+    border:1px solid rgb(77, 71, 72);
+    box-shadow: 1px 2px 7px rgba(255, 255, 255, 0.3); /* Beyaz parıldama efekti */
+    cursor:pointer;
+}
+
+.btn:hover,
+.btnEqual:hover,
+.btnACDE:hover {
+    background-color: rgb(60, 55, 55);
+}
